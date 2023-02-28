@@ -16,7 +16,7 @@
             string name = Console.ReadLine();
 
             if (pass > 0 && pass < 1000000) {
-                if (ename == "CIA" || name == "FBI" || name == "NSA") {
+                if (name == "CIA" || name == "FBI" || name == "NSA") {
                     switch (name)
                     {
                         case "CIA" :
