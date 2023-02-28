@@ -3,7 +3,7 @@
         static void Main(string[] args)
         {
             
-            Console.Write("Password : ");
+         Console.Write("Password : ");
             int pass = int.Parse(Console.ReadLine());
             int passone = int.Parse(Console.ReadLine());
             int passten = int.Parse(Console.ReadLine());
@@ -12,11 +12,10 @@
             int passtenthousand = int.Parse(Console.ReadLine());
             int passhundredthousand = int.Parse(Console.ReadLine());
             Console.WriteLine("pass = {0}{1}{2}{3}{4}{5}", passhundredthousand, passtenthousand, passthousand, passhundred, passten, passone);
-            
-           Console.Write("Codename : ");
+        Console.Write("Codename : ");
             string codename = Console.ReadLine();
 
-            if (pass >= 0 && pass <= 999999) {
+            if (pass > 0 && pass < 1000000) {
                 if (codename == "CIA" || codename == "FBI" || codename == "NSA") {
                     switch (codename)
                     {
