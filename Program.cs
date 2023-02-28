@@ -2,35 +2,24 @@
     {
         static void Main(string[] args)
         {
-            
-         Console.Write("Password : ");
-            int pass = int.Parse(Console.ReadLine());
-                int passone = int.Parse(Console.ReadLine());
-                int passten = int.Parse(Console.ReadLine());
-                int passhundred = int.Parse(Console.ReadLine());
-                int passthousand = int.Parse(Console.ReadLine());
-                int passtenthousand = int.Parse(Console.ReadLine());
-                int passhundredthousand = int.Parse(Console.ReadLine());
-                Console.WriteLine("pass = {0}{1}{2}{3}{4}{5}", passhundredthousand, passtenthousand, passthousand, passhundred, passten, passone); 
+        Console.Write("Password : ");
+            int passhundredthousand = int.Parse(Console.ReadLine());
+            int passtenthousand = int.Parse(Console.ReadLine());
+            int passthousand = int.Parse(Console.ReadLine());
+            int passhundred = int.Parse(Console.ReadLine());
+            int passten = int.Parse(Console.ReadLine());
+            int passone = int.Parse(Console.ReadLine());
+        Console.WriteLine("Password : {0}{1}{2}{3}{4}{5}", passhundredthousand, passtenthousand, passthousand, passhundred, passten, passone); 
+
         Console.Write("Codename : ");
             string name = Console.ReadLine();
 
-            if (pass > 0 && pass < 1000000) {
+            if (true) {
                 if (name == "CIA" || name == "FBI" || name == "NSA") {
                     switch (name)
                     {
                         case "CIA" :
-                            if ( (passone % 9 == 0) ) {
-                                Console.WriteLine("True");
-                            } else {
-                                Console.WriteLine("False"); }
-
-                            if ( (!(passten == 1 && passten == 3) && (passten == 5)) ) {
-                                Console.WriteLine("True");
-                            } else {
-                                Console.WriteLine("False"); }
-
-                            if ( (passthousand < 6) && (passthousand != 8) ) {
+                            if ( (passone % 9 == 0) && (!(passten == 1 && passten == 3) && (passten == 5)) && (passthousand < 6) && (passthousand != 8) ) {
                                 Console.WriteLine("True");
                             } else {
                                 Console.WriteLine("False"); }
@@ -38,40 +27,20 @@
                             break;
 
                         case "FBI" :
-                            if ( (passhundredthousand >= 4) && (passhundredthousand <= 7) ) {
-                                Console.WriteLine("True");
-                            } else {
-                                Console.WriteLine("False"); }
-
-                            if ( (passhundred % 2 == 0) && (passhundred != 6) ) {
-                                Console.WriteLine("True");
-                            } else {
-                                Console.WriteLine("False"); }
-
-                            if ( (passtenthousand % 3 == 0) ) { 
+                            if ( (passhundredthousand >= 4) && (passhundredthousand <= 7) && (passhundred % 2 == 0) && (passhundred != 6) && (passtenthousand % 3 == 0)) {
                                 Console.WriteLine("True");
                             } else {
                                 Console.WriteLine("False"); }
                             break;
 
                         case "NSA" :
-                            if ( (30 % pass == 0) ) {
+                            if ( (30 % passone == 0) && (passone % 3 == 0) && (passone % 2 != 0) ) && (passone == 7 || passten == 7 || passhundred == 7 || passtenthousand == 7 ||  passhundredthousand == 7 || passhundredthousand == 7) ) {
                                 Console.WriteLine("True");
                             } else {
                                 Console.WriteLine("False"); }
-
-                            if ( (passone % 3 == 0) && (passone % 2 != 0) ) {
-                                Console.WriteLine("True");
-                            } else {
-                                Console.WriteLine("False"); }
-
-                            if ( (passone == 7 || passten == 7 || passhundred == 7 || passtenthousand == 7 || passhundredthousand == 7) ) {
-                                Console.WriteLine("True");
-                            } else {
-                                Console.WriteLine("False"); }
-                        break;
+                            break;
                     }
-    passhundredthousand == 7
+    
                 } else {
                      Console.WriteLine("Password is incorrect"); }
             }
