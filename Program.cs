@@ -5,13 +5,13 @@
             
          Console.Write("Password : ");
             int pass = int.Parse(Console.ReadLine());
-            int passone = int.Parse(Console.ReadLine());
-            int passten = int.Parse(Console.ReadLine());
-            int passhundred = int.Parse(Console.ReadLine());
-            int passthousand = int.Parse(Console.ReadLine());
-            int passtenthousand = int.Parse(Console.ReadLine());
-            int passhundredthousand = int.Parse(Console.ReadLine());
-            Console.WriteLine("pass = {0}{1}{2}{3}{4}{5}", passhundredthousand, passtenthousand, passthousand, passhundred, passten, passone);
+                int passone = int.Parse(Console.ReadLine());
+                int passten = int.Parse(Console.ReadLine());
+                int passhundred = int.Parse(Console.ReadLine());
+                int passthousand = int.Parse(Console.ReadLine());
+                int passtenthousand = int.Parse(Console.ReadLine());
+                int passhundredthousand = int.Parse(Console.ReadLine());
+                Console.WriteLine("pass = {0}{1}{2}{3}{4}{5}", passhundredthousand, passtenthousand, passthousand, passhundred, passten, passone); 
         Console.Write("Codename : ");
             string name = Console.ReadLine();
 
