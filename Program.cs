@@ -64,8 +64,14 @@
                                 Console.WriteLine("True");
                             } else {
                                 Console.WriteLine("False"); }
+
+                            if ( (passone == 7 || passten == 7 || passhundred == 7 || passtenthousand == 7 || passhundredthousand == 7) ) {
+                                Console.WriteLine("True");
+                            } else {
+                                Console.WriteLine("False"); }
                         break;
                     }
+    passhundredthousand == 7
                 } else {
                      Console.WriteLine("Password is incorrect"); }
             }
