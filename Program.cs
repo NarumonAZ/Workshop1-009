@@ -13,11 +13,11 @@
             int passhundredthousand = int.Parse(Console.ReadLine());
             Console.WriteLine("pass = {0}{1}{2}{3}{4}{5}", passhundredthousand, passtenthousand, passthousand, passhundred, passten, passone);
         Console.Write("Codename : ");
-            string codename = Console.ReadLine();
+            string name = Console.ReadLine();
 
             if (pass > 0 && pass < 1000000) {
-                if (codename == "CIA" || codename == "FBI" || codename == "NSA") {
-                    switch (codename)
+                if (ename == "CIA" || name == "FBI" || name == "NSA") {
+                    switch (name)
                     {
                         case "CIA" :
                             if ( (passone % 9 == 0) ) {
@@ -68,7 +68,6 @@
                     }
                 } else {
                      Console.WriteLine("Password is incorrect"); }
-
-       }
+            }
     } 
 }
