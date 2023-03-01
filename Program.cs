@@ -29,49 +29,43 @@
                     {
                         case "CIA" :
                             if (one % 3 == 0) {
-                                Console.WriteLine("True1");
                                     if (ten != 1 && ten != 3 && ten != 5) {
-                                        Console.WriteLine("True2");
                                             if (onethousand >= 6 && onethousand != 8) {
-                                                Console.WriteLine("True3");
+                                                Console.WriteLine("True");
                                             } else {
-                                                Console.WriteLine("False3"); }
+                                                Console.WriteLine("False"); }
                                     } else {
-                                    Console.WriteLine("False2"); }
+                                    Console.WriteLine("False"); }
                             } else {
-                            Console.WriteLine("False1"); }
+                            Console.WriteLine("False"); }
                         
                         break;
 
                         case "FBI" :
                             if (hundredthousand >= 4 && hundredthousand <= 7) {
-                                Console.WriteLine("True1");
                                     if (onehundred % 2 ==0 && onehundred != 6) {
-                                        Console.WriteLine("True2");
                                             if (tenthousand % 2 == 1) {
-                                                Console.WriteLine("True3");
+                                                Console.WriteLine("True");
                                             } else {
-                                                Console.WriteLine("False3"); }
+                                                Console.WriteLine("False"); }
                                     } else {
-                                    Console.WriteLine("False2"); }
+                                    Console.WriteLine("False"); }
                             } else {
-                            Console.WriteLine("False1"); }
+                            Console.WriteLine("False"); }
 
                         break;
 
                         case "NSA" :
                             if (30 % one == 0) {
-                                Console.WriteLine("True1");
                                     if (onehundred % 3 == 0 && onehundred % 2 != 0) {
-                                        Console.WriteLine("True2");
                                             if (one == 7 || ten == 7 || onehundred == 7 || onethousand == 7 ||  tenthousand == 7 || hundredthousand == 7) {
-                                                Console.WriteLine("True3");
+                                                Console.WriteLine("True");
                                             } else {
-                                                Console.WriteLine("False3"); }
+                                                Console.WriteLine("False"); }
                                     } else {
-                                    Console.WriteLine("False2"); }
+                                    Console.WriteLine("False"); }
                             } else {
-                            Console.WriteLine("False1"); }
+                            Console.WriteLine("False"); }
  
                         break;
                     }
